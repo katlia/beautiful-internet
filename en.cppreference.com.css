@@ -1,0 +1,791 @@
+/*
+ * CSS extension for en.cppreference.com with the following features:
+ *   - Dark mode overhaul
+ *   - Improved alignment of various elements
+ *   - Improved code highlighting (more colorful!)
+ *   - Cleaner UI, fonts, line spacing, etc. to improve readability
+ *
+ * To be used with a restyling browser extension (like Stylebot or Stylus)
+ *
+ * Notes:
+ *  - This stylesheet does not play well with Dark Reader (or other night mode extensions) so
+ *    deactivate them for en.cppreference.com when this stylesheet is active
+ *  - It may break certain UI elements (apologies if so)
+ *  - If you're missing a font this stylesheet uses, the layout may look strange (I may later
+ *    add some font imports to the stylesheet)
+ *  - Requires CSS level 3 (won't work on ancient browsers)
+ *
+ * See https://github.com/katlia/beautiful-internet
+ *
+ * Licence: Public domain - it's just a CSS file - no need to copyright :)
+ */
+
+* {
+  border: none;
+  border-spacing: initial;
+}
+
+#cpp-content-base {
+  background: #1a1a1f;
+}
+
+div.mw-geshi {
+  background: #223;
+  border-radius: 0;
+  border: 1px solid #fff5;
+}
+
+#cpp-head-second-base, #cpp-head-first-base {
+  background: #111;
+  border: none;
+}
+
+#content {
+  color: #cdec;
+  font-size: 18px;
+  font-family: "Segoe UI", Helvetica, sans-serif;
+}
+
+body {
+  color: #ccc;
+  background: #000;
+}
+
+select {
+  border: none;
+  border-radius: 0;
+  padding: 2px;
+  padding-left: 5px;
+  color: #ccc;
+  font-family: DejaVuSansMono, "DejaVu Sans Mono", monospace;
+  box-shadow: none;
+  background: #222;
+  font-size: 12px;
+}
+
+div.t-navbar-sep {
+  opacity: 0;
+}
+
+div.vectorTabs li, div.vectorTabs {
+  background: none;
+}
+div.vectorTabs span {
+  background: none;
+  border: none;
+}
+div.vectorTabs a {
+  padding: 8px 12px 8px 12px;
+  margin: 6px 2px 6px 2px;
+  background: #aaf2;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+div.stdrev-select div {
+  margin: 6px 2px 6px 2px;
+  padding: 8px 12px 8px 12px;
+}
+
+#cpp-head-second-base {
+  font-size: 18px;
+  padding-top: 8px;
+  padding-bottom: 0;
+  background: #222;
+}
+
+.t-lc, t-c {
+  font-family: DejaVuSansMono, "DejaVu Sans Mono", monospace;
+}
+.t-c {
+  border: none;
+  border-radius: 0;
+  background: #abf1;
+  padding: 2px;
+  font-size: 13px;
+}
+
+#content p, #content li {
+  font-size: 14.5px;
+  line-height: 1.4;
+}
+
+h3, form h2, .t-dcl-h div, h2 {
+  padding: 18px 0 12px 0;
+  font-weight: lighter;
+  border-bottom: 1px solid #fff2;
+  width: fit-content;
+}
+
+.t-dcl-h div {
+  font-size: 16px;
+  margin-left: 1px;
+  text-transform: capitalize;
+  padding-bottom: 9px;
+}
+
+span.es1 {
+  font-weight: normal;
+  color: #ffafaf;
+}
+
+h1 {
+  color: #ffafaf;
+  border: none;
+}
+
+table.t-dcl-begin td {
+  border: none;
+}
+
+span.mw-geshi.cpp.source-cpp {
+  color: #cafc;
+  font-family: Consolas, monospace;
+  font-size: 15.2px;
+}
+
+#content span.mw-geshi.cpp.source-cpp p {
+  font-family: Consolas, monospace;
+  font-size: inherit;
+  line-height: 1.2;
+}
+
+span.kw4 {
+  color: #adec;
+}
+
+span.br0 {
+  color: #c6ac;
+}
+
+span.t-mark-rev {
+  color: #ddd;
+  font-family: Consolas, monospace;
+  padding: 5px;
+}
+
+span.sy2 {
+  color: #f4ac;
+}
+
+li a {
+  color: #acfe;
+}
+
+div.t-navbar-head, div.t-navbar-head a {
+  border: none;
+  text-decoration: none;
+}
+div.t-navbar-head a {
+  color: #fda;
+}
+div.t-navbar-head a tt {
+  color: #ef8;
+}
+
+h3, form h2, h2 {
+  color: #fff
+}
+
+ul {
+  background: none;
+}
+
+span.stdrev-text {
+  font-size: 13px;
+  margin-top: 0.55px;
+}
+
+#cpp-head-first-base a {
+  color: #aeac;
+  margin: 0;
+  padding: 5px;
+  vertical-align: middle;
+  height: 32px;
+  position: relative;
+  padding-right: 0;
+  padding-top: 7.5px;
+}
+#cpp-head-first-base h5 a {
+  color: #888;
+  padding: 5px;
+  padding-left: 0;
+}
+#cpp-head-first-base {
+  margin: 0;
+  padding: 5px;
+}
+
+#cpp-head-search input {
+  border: none;
+  border-radius: none;
+  padding: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+  background: #333;
+  color: #eee;
+  outline: none;
+}
+
+span.kw2 {
+  color: #adec;
+}
+#content span a {
+  color: #ecfb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+span.sy1 {
+  color: #f7ce;
+}
+
+pre.de1 {
+  color: #dde;
+  font-family: Consolas, monospace;
+}
+
+span.me2 {
+  color: #acf;
+}
+
+.mw-geshi a {
+  color: #caf;
+}
+
+span.sy4 {
+  color: #caf;
+}
+
+span.st0 {
+  color: #fcad;
+}
+
+span.co2 {
+  color: #ce7a;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+div.coliru-btn.coliru-btn-run-init {
+  margin: 12px;
+  margin-left: 0;
+  padding: 8px;
+  border: 1px solid #fff4;
+  border-radius: 0;
+  background: #333;
+  box-shadow: none;
+  color: #eee;
+  font-family: Consolas, monospace;
+}
+
+div.t-example-live-link {
+  padding: 0;
+  margin: 0;
+}
+
+.noprint {
+  color: #aaa;
+  border: none;
+  background: #000;
+}
+.noprint li {
+  color: #ccc;
+}
+
+.t-dsc td, .t-dsc-hitem td  {
+  border: 2px solid #1a1a1f;
+  background: #aac1;
+  padding: 6px 12px 6px 12px;
+}
+
+td a {
+  color: #cab;
+  font-weight: normal;
+}
+
+td code {
+  font-size: 13px;
+}
+
+td p code {
+  font-size: 14px;
+}
+
+.t-mark {
+  color: #d8ad;
+  font-family: Consolas, monospace;
+  font-size: 12px;
+}
+
+.t-dcl .t-mark {
+  margin-left: -5px;
+  margin-right: 25px;
+  display: block;
+  text-align: right;
+}
+
+tr span.mw-headline {
+  font-size: 16px;
+  color: #aaa;
+  font-weight: normal;
+  margin-left: 2px;
+  border-bottom: 1px solid #fff0
+}
+
+span.kw1 {
+  color: #adec;
+}
+#mw-content-text p > a {
+  color: #8ad;
+}
+
+div p code {
+  font-family: Consolas, monospace;
+  padding: 2px;
+  background: #aaf1;
+}
+
+#content div.mw-content-ltr p {
+  font-family: "Segoe UI";
+  line-height: 1.5;
+}
+
+.t-dsc-header > td > div {
+  padding: 0;
+  margin: 0;
+  padding-top: 12px;
+}
+
+.t-dsc-header > td > div::after {
+  content: ":";
+}
+
+tr span.mw-headline {
+  margin-left: 0;
+}
+
+.t-dsc-header > td:nth-child(1) > div {
+  margin-left: 1px;
+}
+.t-navbar-menu div {
+  background: none;
+  padding: 1px;
+}
+.t-navbar-menu > div {
+  border: 1px solid #fff3;
+  background: #223;
+  box-shadow: 0px 0px 32px 5px #000a;
+  padding: 12px;
+}
+.t-navbar-menu table {
+  background: #223;
+}
+
+.t-navbar-menu td {
+  padding: 2px;
+}
+
+.t-navbar-menu td span {
+  font-family: Consolas, monospace;
+}
+
+.t-nv-h1 td {
+  padding-top: 12px;
+  padding-left: 4px;
+  padding-bottom: 8px;
+}
+.t-nv-h2 td {
+  padding-left: 8px;
+}
+.t-nv td {
+  padding-left: 8px;
+}
+.t-nv-h1 td a {
+  color: #dad;
+  border-bottom: 1px solid #dad5;
+}
+.t-nv-h2 td a {
+  color: #aad;
+  border-bottom: 1px solid #aad5;
+}
+.t-nv td a {
+  color: #add;
+}
+a:hover {
+  filter: brightness(1.5);
+  text-decoration: none;
+}
+.mainpagetable td {
+  background: none;
+  line-height: 1.6;
+}
+#mw-content-text > .mainpagetable p > a {
+  color: #c8b;
+}
+#mw-content-text .mainpagetable .rowtop span {
+  color: #acc;
+}
+.mainpagetable td br {
+  line-height: 1.6;
+}
+
+.wikitable, .dsctable {
+  background: #aac1;
+  color: #aefc;
+  margin-left: -2px;
+  margin-top: -2px;
+}
+
+.wikitable *, .dsctable * {
+  background: none;
+  font-weight: normal;
+  padding: 3px;
+}
+
+.wikitable td, .wikitable th, .dsctable td, .dsctable th {
+  border: 4px solid #1a1a1f;
+  line-height: 1.5;
+  padding: 6px;
+  font-size: 13px;
+}
+
+.dsctable td, .dsctable th {
+  border: 2px solid #1a1a1f;
+}
+
+.wikitable a, .dsctable a {
+  color: #bbde;
+}
+.dsctable th {
+  color: #c8a;
+}
+.dsctable td {
+  color: #cbd;
+}
+.dsctable td code {
+  color: #aae;
+  font-size: 12px;
+}
+
+a.internal {
+  color: #fff;
+  padding-left: 1px;
+}
+
+div.fullImageLink {
+  display: none;
+}
+
+#filehistory, #filelinks {
+  color: #cac;
+  font-size: 18px;
+}
+
+#filetoc {
+  text-align: left;
+  margin-left: -4px;
+}
+
+.noprint a img {
+  filter: saturate(.5) invert() ;
+}
+
+h4 .mw-headline {
+  color: #ccd;
+}
+
+a.new span {
+  color: #aaa;
+}
+
+#p-personal .menu ul {
+  background: #111;
+  width: 130px;
+  height: 33px;
+  margin-left: -1px;
+  padding: 0px;
+}
+
+#p-personal .menu li {
+  background: none;
+}
+
+input[type="submit"]:hover, button:hover {
+  filter: brightness(1.5);
+}
+
+.t-li1 a code {
+  color: #acfd;
+}
+
+#userlogin td.mw-input input, #userloginForm td.mw-input input {
+  background: #ccf1;
+  margin: 3px;
+  padding: 3px;
+  height: 16px;
+  color: #fff;
+  outline: none;
+}
+
+#userlogin td.mw-label, #userloginForm td.mw-label {
+  height: 18px;
+  padding: 4px;
+}
+
+#userlogin tr, #userlogin td, #userloginForm tr, #userloginForm td {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+.captcha label {
+  font-family: Consolas, monospace;
+}
+.captcha label::after {
+  content: " ";
+}
+
+#wpCaptchaWord {
+  background: #ccf1;
+  margin: 3px;
+  margin-left: -1px;
+  padding: 3px;
+  height: 16px;
+  color: #fff;
+  outline: none;
+  font-family: Consolas, monospace;
+}
+
+#userlogin .prefsectiontip p, #userloginForm .prefsectiontip p {
+  font-size: 14px;
+}
+
+#wpCreateaccount, #wpLoginAttempt {
+  border: none;
+  padding: 5px 12px 5px 12px;
+  background: #ccf2;
+  color: #fff;
+}
+
+#wpRemember {
+  filter: invert() saturate(0) sepia(1) hue-rotate(-60deg);
+}
+span.sy3 {
+  color: #89e;
+}
+
+h5 span.mw-headline {
+  color: #ccc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  border-left: 5px solid #ccc5;
+  padding-left: 7px;
+  font-size: 14px;
+}
+
+h5 {
+  margin: 10px;
+  margin-left: 0;;
+}
+
+div.mw-content-ltr td code b {
+  margin-left: -3px;
+}
+
+div.t-member {
+  background: #77a1;
+  overflow-x: scroll;
+}
+
+div.t-member span.mw-headline {
+  color: #aac;
+}
+div.t-member span p span, div.t-member span p {
+  color: #ccc;
+}
+
+span.nu0, span.nu1, span.nu2, span.nu3, span.nu4, span.nu5, span.nu6, span.nu7, span.nu8,
+span.nu9, span.nu10, span.nu11, span.nu12, span.nu13, span.nu14, span.nu15, span.nu16,
+span.nu17, span.nu18, span.nu19, span.nu20, span.nu21, span.nu22 {
+  color: #aea;
+}
+
+span.coMULTI {
+  color: #ffafaf;
+  font-family: Consolas, monospace;
+  font-size: 13px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+span.t-spar {
+  color: #acbe;
+}
+
+a.extiw {
+  color: #acfe;
+}
+
+.t-li1 {
+  font-size: 14.5px;
+  line-height: 1.6;
+  text-indent: 0;
+  padding: 12px;
+  margin-top: 11px;
+  background: #caf1;
+  color: #efe5fad2;
+}
+
+.t-li1 span.t-c {
+  padding: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 0;
+  margin: 1px;
+  margin-top: 2px;
+}
+
+.t-li1 span span.t-c {
+  padding: 1px;
+  margin: 0;
+}
+
+span.mjx-mrow {
+  font-size: 18px;
+}
+/*
+ul {
+  list-style-image: unset;
+  list-style-type: disc;
+  list-style: outside radial-gradient(#000,#000,#eaf,#000,#000);
+  padding-left: 4px;
+}
+*/
+ul {
+  list-style-image: unset;
+  list-style-type: unset;
+  list-style: unset;
+  padding-left: 4px;
+}
+
+ul li::marker {
+  color: #8bb;
+  content: "> ";
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  translate: 0px -5px;
+}
+
+ul li {
+  vertical-align: middle;
+}
+.t-li1 span.t-li {
+  display: none;
+}
+
+h3, h2 {
+  margin-top: 14px;
+}
+
+.t-li1 a {
+  color: #acfe;
+}
+div.t-inherited {
+  background: none;
+  border: 4px solid #aaa3;
+  box-shadow: 3px 3px 12px #0006;
+}
+
+.t-dsc-header .t-mark-rev {
+  width: 110px;
+  display: block;
+  margin-top: -10px;
+  font-size: 12px;
+}
+
+.t-mark-rev {
+  font-size: 12px;
+}
+
+.t-dsc-header > td > div::after {
+  display: none;
+}
+
+.t-dsc-header > td > div > code::after {
+  content: ":";
+  font-size: 12.4px;
+}
+
+.t-dcl-begin span.t-mark-rev.t-until-c99, .t-dcl-begin span.t-mark-rev.t-since-c99,
+.t-dcl-begin span.t-mark-rev.t-since-c11, .t-dcl-begin span.t-mark-rev.t-until-c11 {
+  margin-left: -45px;
+  background: #1a1a1f;
+}
+
+.mw-collapsible th {
+  background: #20232a;
+}
+.mw-collapsible td {
+  background: #111;
+}
+td.mbox-text, td.mbox-image {
+  background: #223;
+  padding: 12px;
+}
+#wpTextbox1 {
+  padding: 12px;
+  color: #0f0;
+  /*background: #080808;*/
+  background: radial-gradient(#0c100c,#080808);
+  filter: blur(0.5px);
+  outline: none;
+}
+#wpTextbox1::selection {
+  color: #080808;
+  background: #0f0;
+}
+
+input.mw-summary {
+  background: #223;
+  color: #eee;
+  outline: none;
+  padding: 4px;
+  margin: 12px;
+}
+
+#toolbar:has(img.mw-toolbar-editbutton) {
+  background: #aad;
+  padding: 3px;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 1px;
+}
+img.mw-toolbar-editbutton {
+  filter: drop-shadow(0px 2px 2px #000);
+  padding: 2px;
+  transition-duration: 100ms;
+}
+img.mw-toolbar-editbutton:hover {
+  filter: drop-shadow(2px 2px 2px #000) invert() hue-rotate(180deg);
+}
+
+div[style="background-color: #ffeeaa; margin: 0.2em 0; padding: 0.2em; text-align: center; border: 1px solid silver; border-radius: 3px;"] {
+  background: #946;
+  color: #fff;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+#wpSave, #wpPreview, #wpDiff {
+  padding: 6px 12px;
+  background: #111;
+  color: #beb;
+  border: 1px solid#565;
+}
+
+span.t-mark-rev {
+  overflow-x: visible;
+  white-space: nowrap;
+}

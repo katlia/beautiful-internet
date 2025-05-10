@@ -1,0 +1,162 @@
+/*
+ * CSS extension for uica.uops.info with the following features:
+ *   - Dark mode
+ *   - Improved alignment and readability
+ *   - Improved modernized buttons
+ *
+ * To be used with a restyling browser extension (like Stylebot or Stylus).
+ * Note: You'll need to deactivate Dark Reader for uica.uops.info when this
+ * stylesheet is active, or it'll mess up the colors.
+ *
+ * See https://github.com/katlia/beautiful-internet
+ *
+ * Licence: Public domain
+ */
+
+hr {
+  border: 1px solid #aac4;
+}
+
+textarea, .toolOutput {
+  border-radius: 0;
+  border: none;
+  background: #353535;
+  padding: 12px;
+  color: #ddd;
+}
+
+textarea {
+  margin: 0;
+}
+
+td, th {
+  border: none;
+}
+
+#TPTable {
+  border: 2px solid #333;
+  background: #23232e;
+}
+#TPTable tr:nth-of-type(2n) {
+  background: #282835;
+}
+#TPTable tr:nth-of-type(2n+1) {
+  background: #23232e;
+}
+
+#TPTable tr th {
+  background: #445;
+  border: 1px solid #222;
+}
+
+h1, h2, h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #111;
+  margin: 0;
+  padding: 20px;
+  color: #ddd;
+}
+
+label input {
+  display: none;
+}
+label {
+  padding: 6px 10px;
+  border-radius: 100px;
+  background: #222a;
+  color: #eee;
+  cursor: pointer;
+  user-select: none;
+}
+label:hover {
+  background: #366a;
+}
+label:has(input:checked):hover {
+  background: #474;
+}
+label:has(input:checked) {
+  background: #363;
+}
+
+form table td {
+  padding: 8px 0;
+}
+form table tr td {
+  border-bottom: 8px solid #0000;
+}
+form table tr td:nth-child(1) {
+  padding: 0;
+}
+
+tr.uiCAOptions {
+  translate: 35px;
+}
+
+tr.uiCAOptions:nth-child(4) {
+  translate: 0;
+}
+tr.uiCAOptions:nth-child(4) td {
+  padding-top: 8px;
+  font-weight: bold;
+}
+
+tr.uiCAOptions td {
+  padding: 3px;
+}
+
+form td a i::before {
+  color: #aff;
+}
+
+form table br {
+  margin-bottom: 16px;
+}
+
+a.iframe.cboxElement {
+  color: #dce;
+  text-decoration: none;
+}
+
+body h1 span {
+  color: #98e;
+}
+
+body h1 a {
+  color: #abd;
+  text-decoration: none;
+  border-bottom: 0.1px solid #888;
+}
+
+body h1 a:hover {
+  text-decoration: none;
+  border-bottom: 0.1px solid;
+}
+
+input[type="button"] {
+  border: none;
+  border-radius: none;
+  background: #344;
+  color: #eee;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background: #455;
+}
+
+#alignment {
+  border: none;
+  padding: 6px 10px;
+  font-size: 12px;
+  background: #222;
+  color: #eee;
+  margin: 0;
+  border-radius: 100px;
+}
+
+body h1 {
+  margin-top: 0;
+}
