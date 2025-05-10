@@ -1,0 +1,170 @@
+/*
+ * IMPORTANT: You must have dark mode enabled in the "Appearance" settings of
+ *            Wikipedia for this stylesheet to work properly.
+ *
+ * CSS extension for wikipedia.org with the following features:
+ *   - Better readability
+ *   - Dark mode fixes
+ *   - More interesting colors
+ *
+ * To be used with a restyling browser extension (like Stylebot or Stylus).
+ *
+ * Notes:
+ *  - You'll need to deactivate Dark Reader for wikipedia.org when this
+ *    stylesheet is active, or it'll mess up the colors
+ *  - It works better when the fonts it uses are installed (namely, Segeo UI
+ *    and Linux Biolinum O); i'll likely add imports to these later
+ *
+ * See https://github.com/katlia/beautiful-internet
+ *
+ * Licence: Public domain
+ */
+
+body.skin--responsive.skin-vector.skin-vector-search-vue.mediawiki.ltr.sitedir-ltr.mw-hide-empty-elt.ns-0.ns-subject.mw-editable.action-view.uls-dialog-sticky-hide, body {
+  background: #111;
+  height: fit-content;
+}
+
+div.mw-page-container {
+  background: #aaf1;
+}
+
+div.vector-pinned-container {
+  background: none;
+}
+
+header.vector-header.mw-header {
+  background: #aaf1;
+}
+
+table.infobox, html.skin-theme-clientpref-night .infobox:not(.notheme) {
+  background: #4463;
+  border: 1px solid #fff3;
+}
+
+th.infobox-above.summary {
+  background: none;
+}
+
+td.infobox-subheader {
+  background: none;
+}
+
+th.infobox-header {
+  background: none;
+}
+
+div.vector-sticky-pinned-container::after {
+  box-shadow: none;
+  background: none;
+}
+
+p, li {
+  color: #defb;
+  line-height: 1.7;
+  font-family: 'Segoe UI', Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #7ccb;
+}
+
+span.mw-page-title-main, h1, h2, h3 {
+  font-family: 'Linux Biolinum O', 'Times New Roman', sans-serif;
+}
+
+div.hatnote.navigation-not-searchable:not(.notheme) {
+  background: none;
+}
+
+.cdx-radio__icon {
+  filter: invert() hue-rotate(-60deg) contrast(.7);
+}
+
+input.cdx-text-input__input {
+  border: 1px solid #fff3;
+}
+
+button.cdx-button.cdx-search-input__end-button {
+  border: 1px solid #fff3;
+}
+
+html.skin-theme-clientpref-night {
+  --background-color-interactive-subtle: #0000;
+  --color-progressive: #eacb;
+  --border-color-progressive--focus: #0000;
+  --box-shadow-color-progressive--focus: #0000;
+}
+
+table.infobox.ib-country.vcard tbody {
+  background: #4463;
+  border: 2px solid #0000;
+}
+table.infobox.ib-country.vcard * {
+  font-family: 'Linux Biolinum O';
+}
+
+div label input {
+  filter: hue-rotate(60deg) contrast(.8) saturate(.5);
+}
+
+span.vector-icon.mw-ui-icon-wikimedia-expand {
+  translate: -6px 0px;
+  background: #acf;
+}
+
+button, input {
+  overflow: visible;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+nav.vector-page-tools-landmark {
+  margin-top: 2px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button.cdx-button.cdx-button--action-default.cdx-button--weight-normal.cdx-button--size-medium.cdx-button--framed.cdx-search-input__end-button {
+  border: 1px solid #0007;
+}
+
+.cdx-button--fake-button--enabled {
+  background: #fff1;
+  opacity: .8;
+  border: none;
+  backdrop-filter: blur(6px);
+}
+
+.cdx-button--weight-quiet {
+  background: none;
+  opacity: 1;
+  border: none;
+  backdrop-filter: none;
+}
+
+table th {
+  background: #22262f;
+  color: #ccc;
+  border: 3px solid #22262f;
+}
+table td {
+  background: #12161f;
+  color: #ccc;
+  border: 3px solid #22262f;
+}
+table.infobox:not(.notheme) td, table.infobox:not(.notheme) th {
+  background: #12161f;
+  color: #ccc;
+  border: none;
+}
+table {
+  background: #12161f;
+  color: #ccc;
+  border: 3px solid #22262f;
+}
+
+span.legend-color.mw-no-invert {
+  filter: invert();
+}
